@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Tablice {
+public class Tables {
 
     protected static int[][] arrayOfInts;
     protected static int sizeX,sizeY;
@@ -9,10 +9,10 @@ public class Tablice {
     public static void main(String[] args) {
 
         try{
-        sizeX=Integer.valueOf(args[0]);
-        sizeY=Integer.valueOf(args[1]);
+        sizeX=Integer.parseInt(args[0]);
+        sizeY=Integer.parseInt(args[1]);
         }
-        catch(Exception ex){System.out.println("It doesn't work"); System.exit(1);}
+        catch(Exception ex){System.out.println("Wrong arguments"); System.exit(1);}
         arrayOfInts= new int[sizeX][sizeY];
         arrayOfSums = new long [sizeX];
         for(int x=0;x<arrayOfInts.length;x++)
