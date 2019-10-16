@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Tablice {
+public class Tables {
 
     protected static int[][] arrayOfInts;
     protected static int sizeX,sizeY;
