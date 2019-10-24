@@ -1,0 +1,38 @@
+Musimy wybrać co dzieje się z naszą komórką ON UPDATE czyli kiedy coś zmieni się w kluczu obcym lub ON DELETE, czyli w przypadku usunięcia klucza obcego 
+lub w przypadku INSERT, czyli kiedy wprowadzamy coś do "dziedziczącej" kolumny
+
+ON UPDATE
+Pierwszą opcją jest RESTRICT, które po prostu zabrania dokonywania zmian, które sprawią, że powiązanie będzie niezgodne.
+
+CASCADE sprawia, że gdy dane w kluczu obcym się zmienią, dane, które będą niezgodne z kluczem zmieniają się tak aby były z nim zgodne 
+
+SET NULL - gdy dane w kluczu się zmienią, dane niepasujące (jeśli to możliwe), zmienią się na nulle, jeśli nie, zabrania zmian
+
+NO ACTION - gdy dane w kluczu się zmienią i nie pasują do siebie, wyłączany jest klucz obcy
+
+SET DEFAULT - gdy dane w "dziedziczącej" kolumnie nie będą pasować do klucza, zostanie ustawiona dla nich ustalona wartość domyślna 
+
+*wszystkie przypadki poniżej odnoszą się do wprowadzonych niezgodnych danych*
+ON DELETE
+
+RESTRICT-nie pozwala usunąć danych z klucza w przypadku jeśli spowoduje to niezgodność
+
+CASCADE - dopasuje dane
+
+SET NULL- jeśli możliwe, ustawia na null
+
+NO ACTON- wyłączy powiązanie 
+
+SET DEFAULT-ustawi wartość domyślną w dziedziczącej kolumnie
+
+INSERT
+
+RESTRICT-nie pozwoli wprowadzić błędnych danych
+
+CASCADE-dopasuje dane w kluczu głównym 
+
+SET NULL-nie pozwoli wprowadzić danych
+
+NO ACTION- nie pozwoli wprowadzić danych
+
+SET DEFAULT- nie pozowoli wprowadzić danych
