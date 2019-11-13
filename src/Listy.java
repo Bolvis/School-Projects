@@ -15,9 +15,9 @@ public class Listy {
 
         while(true)
         {
-            for(int index=0;index<list.size();index++) {
+            /*for(int index=0;index<list.size();index++) {
                 System.out.println((index+1)+list.get(index).toString()+"\n");
-            }
+            }*/
             System.out.println("1.Add person\n2.Remove person\n" +
                     "3.Sort list\n4.Exit\n");
             try{chose=Integer.valueOf(scanner.next());}
@@ -86,6 +86,31 @@ public class Listy {
                             else
                                 return -1;
                         });
+
+                        list.forEach(System.out::println);
+
+                        System.out.println("\nSortuję po wszystkim");
+                        list.sort(
+                                new Comparator<Person>() {
+                                    @Override
+                                    public int compare(Person m1, Person m2) {
+
+                                        String s1 = m1.getSurname();
+                                        String s2 = m2.getSurname();
+                                        if(s1.equals(s2))
+                                        {
+                                            s1 = m1.getName();
+                                            s2 = m2.getName();
+                                        }
+                                        if(s1.equals(s2))
+                                        {
+                                            s1 = m1.getAge();
+                                            s2= m2.getAge();
+                                        }
+                                        return s1.compareTo(s2);
+                                    }
+                                }
+                        );
 
                         list.forEach(System.out::println);
                         break;
