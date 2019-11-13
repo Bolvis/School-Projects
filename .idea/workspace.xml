@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c83b7a7-f42a-4784-a82b-1c1f1bad6357" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School Projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/School Projects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listy.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +87,7 @@
       <updated>1570625425789</updated>
       <workItem from="1570625432560" duration="3092000" />
       <workItem from="1571228404411" duration="377000" />
+      <workItem from="1573650831817" duration="613000" />
     </task>
     <servers />
   </component>

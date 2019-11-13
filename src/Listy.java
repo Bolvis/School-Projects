@@ -26,11 +26,11 @@ public class Listy {
             switch(chose)
             {
                 case 1:
-                    System.out.print("name:");
+                    System.out.print("getName():");
                     name=scanner.next();
-                    System.out.print("surname:");
+                    System.out.print("getSurname():");
                     surname=scanner.next();
-                    System.out.print("age:");
+                    System.out.print("getAge():");
                     age=scanner.next();
                     list.add(new Person(name,surname,age));
                     break;
@@ -42,7 +42,53 @@ public class Listy {
                     try{list.remove(index-1);}catch(Exception ex){System.out.println("There's not such index");}
                     break;
                     case 3:
-                    break;
+
+                        System.out.println("\nSortuję po nazwisku");
+                        list.sort(
+                                new Comparator<Person>() {
+                                    @Override
+                                    public int compare(Person m1, Person m2) {
+
+                                        String s1 = m1.getSurname();
+                                        String s2 = m2.getSurname();
+                                        return s1.compareTo(s2);
+                                    }
+                                }
+                        );
+
+                        list.forEach(System.out::println);
+
+                        System.out.println("\nSortuję po imieniu");
+                        list.sort(
+                                new Comparator<Person>() {
+                                    @Override
+                                    public int compare(Person m1, Person m2) {
+
+                                        String s1 = m1.getName();
+                                        String s2 = m2.getName();
+                                        return s1.compareTo(s2);
+                                    }
+                                }
+                        );
+
+                        list.forEach(System.out::println);
+
+                        System.out.println("\nSortuję po wieku");
+                        list.sort((Person m1, Person m2) -> {
+                            //Jeśli są równe zwracamy 0;
+                            if (m1.getAge().equals(m2.getAge()))
+                                return 0;
+                            //Jeśli obiekt m1 (czyli pierwszy z porównywanych)
+                            //jest większy zwracamy 1
+                            //w przeciwnym razie zwracamy -1
+                            if (Integer.valueOf(m1.getAge())>Integer.valueOf(m2.getAge()))
+                                return 1;
+                            else
+                                return -1;
+                        });
+
+                        list.forEach(System.out::println);
+                        break;
                 case 4:
                     System.exit(1);
                     break;
