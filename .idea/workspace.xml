@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c83b7a7-f42a-4784-a82b-1c1f1bad6357" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/NewConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/School Projects/META-INF/School Projects.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/School Projects/META-INF/School Projects.kotlin_module" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Praca\School-Projects\src" />
       <recent name="D:\Praca\School Projects\School-Projects" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Praca\School-Projects" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -61,19 +69,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Listy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Listy" />
+  <component name="RunManager" selected="Application.server">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="client" />
       <module name="School Projects" />
+      <option name="PROGRAM_PARAMETERS" value="127.0.0.1 3030" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Listy" />
-      </list>
-    </recent_temporary>
+    <configuration name="server" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server" />
+      <module name="School Projects" />
+      <option name="PROGRAM_PARAMETERS" value="3030" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.server" />
+      <item itemvalue="Application.Client" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -88,6 +104,9 @@
       <workItem from="1570625432560" duration="3092000" />
       <workItem from="1571228404411" duration="377000" />
       <workItem from="1573650831817" duration="2532000" />
+      <workItem from="1574256367106" duration="112000" />
+      <workItem from="1574256496643" duration="1215000" />
+      <workItem from="1574860327405" duration="4333000" />
     </task>
     <servers />
   </component>
@@ -109,5 +128,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/School-Projects" />
+    </ignored-roots>
   </component>
 </project>
